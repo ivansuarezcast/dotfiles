@@ -39,6 +39,9 @@ bindsym $mod+Shift+f exec firefox
 #start waterfox
 bindsym $mod+Shift+w exec waterfox
 
+#take screenshot
+bindsym $mod+Shift+s exec scrot
+
 #function keys
 bindsym XF86AudioLowerVolume	exec amixer -D pulse sset Master 5%-
 bindsym XF86AudioRaiseVolume	exec amixer -D pulse sset Master 5%+
@@ -183,6 +186,7 @@ bar {
 new_window pixel 1
 hide_edge_borders both
 
+exec redshift &
 exec sh ~/.fehbg &
 #exec compton --config ./.compton/compton.conf
 
